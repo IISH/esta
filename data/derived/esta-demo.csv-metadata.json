@@ -1,0 +1,242 @@
+{
+ "@id": "https://iisg.amsterdam/esta-demo.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "esta-demo.csv",
+ "dialect": {
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "quoteChar": "\""
+ },
+ "dc:title": "esta-demo.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2020-03-06",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/subvoyage_id",
+    "name": "subvoyage_id",
+    "titles": [
+     "subvoyage_id"
+    ],
+    "dc:description": "subvoyage_id",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/departure_place",
+    "name": "departure_place",
+    "titles": [
+     "departure_place"
+    ],
+    "dc:description": "departure_place",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/departure_region",
+    "name": "departure_region",
+    "titles": [
+     "departure_region"
+    ],
+    "dc:description": "departure_region",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/departure_date",
+    "name": "departure_date",
+    "titles": [
+     "departure_date"
+    ],
+    "dc:description": "departure_date",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/arrival_place",
+    "name": "arrival_place",
+    "titles": [
+     "arrival_place"
+    ],
+    "dc:description": "arrival_place",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/arrival_region",
+    "name": "arrival_region",
+    "titles": [
+     "arrival_region"
+    ],
+    "dc:description": "arrival_region",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/arrival_date",
+    "name": "arrival_date",
+    "titles": [
+     "arrival_date"
+    ],
+    "dc:description": "arrival_date",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/vessel",
+    "name": "vessel",
+    "titles": [
+     "vessel"
+    ],
+    "dc:description": "vessel",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/voyage",
+    "name": "voyage",
+    "titles": [
+     "voyage"
+    ],
+    "dc:description": "voyage",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/total_slaves_boarded_on_voyage",
+    "name": "total_slaves_boarded_on_voyage",
+    "titles": [
+     "total_slaves_boarded_on_voyage"
+    ],
+    "dc:description": "total_slaves_boarded_on_voyage",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/total_slaves_landed_on_voyage",
+    "name": "total_slaves_landed_on_voyage",
+    "titles": [
+     "total_slaves_landed_on_voyage"
+    ],
+    "dc:description": "total_slaves_landed_on_voyage",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/slaves_boarded_at_departure_location",
+    "name": "slaves_boarded_at_departure_location",
+    "titles": [
+     "slaves_boarded_at_departure_location"
+    ],
+    "dc:description": "slaves_boarded_at_departure_location",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/slaves_landed_at_arrival_location",
+    "name": "slaves_landed_at_arrival_location",
+    "titles": [
+     "slaves_landed_at_arrival_location"
+    ],
+    "dc:description": "slaves_landed_at_arrival_location",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/captain",
+    "name": "captain",
+    "titles": [
+     "captain"
+    ],
+    "dc:description": "captain",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/actor",
+    "name": "actor",
+    "titles": [
+     "actor"
+    ],
+    "dc:description": "actor",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/notes",
+    "name": "notes",
+    "titles": [
+     "notes"
+    ],
+    "dc:description": "notes",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/esta-demo.csv/column/source",
+    "name": "source",
+    "titles": [
+     "source"
+    ],
+    "dc:description": "source",
+    "datatype": "string"
+   }
+  ],
+  "primaryKey": "subvoyage_id",
+  "aboutUrl": "{_row}"
+ }
+}
