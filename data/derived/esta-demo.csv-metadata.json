@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/"
+   "@base": "https://iisg.amsterdam/resource/esta/"
   },
   {
    "bibo": "http://purl.org/ontology/bibo/",
@@ -237,6 +237,6 @@
    }
   ],
   "primaryKey": "subvoyage_id",
-  "aboutUrl": "{_row}"
+  "aboutUrl": "{subvoyage_id}"
  }
 }
