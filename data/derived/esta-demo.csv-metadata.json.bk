@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/resource/esta-demo/"
+   "@base": "https://iisg.amsterdam/resource/esta/"
   },
   {
    "bibo": "http://purl.org/ontology/bibo/",
@@ -56,8 +56,7 @@
    "skos": "http://www.w3.org/2004/02/skos/core#",
    "time": "http://www.w3.org/2006/time#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#",
-   "esta": "https://iisg.amsterdam/resource/esta-demo/"
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
  ],
  "url": "esta-demo.csv",
@@ -99,8 +98,7 @@
      "departure_place"
     ],
     "dc:description": "departure_place",
-    "propertyUrl": "departure_place",
-    "valueUrl": "location/{departure_place}"
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/esta-demo.csv/column/departure_region",
@@ -127,8 +125,7 @@
      "arrival_place"
     ],
     "dc:description": "arrival_place",
-    "propertyUrl": "arrival_place",
-    "valueUrl": "location/{arrival_place}"
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/esta-demo.csv/column/arrival_region",
@@ -165,12 +162,6 @@
     ],
     "dc:description": "voyage",
     "datatype": "string"
-   },
-   {
-    "virtual": true,
-    "aboutUrl": "{subvoyage_id}",
-    "propertyUrl": "schema:partOfTrip",
-    "valueUrl": "{voyage}"
    },
    {
     "@id": "https://iisg.amsterdam/esta-demo.csv/column/total_slaves_boarded_on_voyage",
@@ -243,25 +234,7 @@
     ],
     "dc:description": "source",
     "datatype": "string"
-    },
-    {
-     "@id": "https://iisg.amsterdam/esta-demo.csv/column/departure_year",
-     "name": "departure_year",
-     "titles": [
-      "departure_year"
-     ],
-     "dc:description": "departure_year",
-     "datatype": "xsd:gYear"
-    },
-    {
-     "@id": "https://iisg.amsterdam/esta-demo.csv/column/arrival_year",
-     "name": "arrival_year",
-     "titles": [
-      "arrival_year"
-     ],
-     "dc:description": "arrival_year",
-     "datatype": "xsd:gYear"
-    }
+   }
   ],
   "primaryKey": "subvoyage_id",
   "aboutUrl": "{subvoyage_id}"

@@ -18,6 +18,9 @@
   # check data
   df[1:5,]
   
+  # remove dash from var names for cow-easyness
+  names(df) <- c("location", "locationRep", "lonLat", "image")
+  
   # generate uuid
   df$locRepId <- UUIDgenerate(n=dim(df)[1])
   

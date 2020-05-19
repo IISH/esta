@@ -94,12 +94,12 @@
     "propertyUrl": "schema:name"
    },
    {
-    "@id": "https://iisg.amsterdam/harbour-info.csv/column/location-rep",
-    "name": "location-rep",
+    "@id": "https://iisg.amsterdam/harbour-info.csv/column/locationRep",
+    "name": "locationRep",
     "titles": [
-     "location-rep"
+     "locationRep"
     ],
-    "dc:description": "location-rep",
+    "dc:description": "locationRep",
     "datatype": "string",
     "propertyUrl": "vocab/representedBy"
    },
@@ -114,7 +114,7 @@
      "null": ["NA"],
      "aboutUrl": ".well-known/genid/{locRepId}",
      "propertyUrl": "geo:asWKT",
-     "csvw:value": "{{'POINT(' + lonlat + ')'}}"
+     "csvw:value": "{{'POINT(' + lonLat + ')'}}"
     },
    {
     "@id": "https://iisg.amsterdam/harbour-info.csv/column/image",
@@ -128,6 +128,6 @@
    }
   ],
   "primaryKey": "location",
-  "aboutUrl": "{location}"
+  "aboutUrl": "location/{location}"
  }
 }
